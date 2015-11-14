@@ -1,6 +1,7 @@
 import urllib.request, json, os, sys
 from bs4 import BeautifulSoup
 
+
 def get_playlist_name(url):
 	try:
 		print ("Fetching HTML of url: ", url)
@@ -26,7 +27,7 @@ updates = lines
 original_location = os.getcwd()
 
 for a in lines:
-	command = "youtube-dl "+ a
+	command = "youtube-dl -f bestvideo+bestaudio "+ a
 	curr_location = os.getcwd()
 	if 'playlist' in a:
 		print("playlist Detected")
