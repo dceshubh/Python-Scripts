@@ -27,7 +27,9 @@ updates = lines
 original_location = os.getcwd()
 
 for a in lines:
-	command = "youtube-dl -f bestvideo+bestaudio "+ a
+	#command = "youtube-dl -f bestvideo+bestaudio "+ a
+	# above is to be used if ffmpeg is installed on the system
+	command ="youtube-dl " + a
 	curr_location = os.getcwd()
 	if 'playlist' in a:
 		print("playlist Detected")
@@ -60,4 +62,4 @@ os.chdir(original_location)
 f = open('download.txt','w')
 for a in updates:
 	f.write(a)
-f.close()	
+f.close()
