@@ -1,0 +1,96 @@
+#!/bin/bash
+# Install Packages Script
+
+echo " *************** INSTALLING PACKAGES **********************"
+echo " ----------------------------------------------------------"
+echo " ---------------- Installing GCC ------------------ "
+sudo apt-get install gcc
+echo " ---------------- Installing G++ ------------------ "
+sudo apt-get install g++
+echo " ---------------- Installing python ------------------ "
+sudo apt-get install python
+echo " ---------------- Installing python3------------------ "
+sudo apt-get install python3
+echo " ---------------- Installing pip ------------------ "
+sudo apt-get install python-pip
+echo " ---------------- Installing pip3 ------------------ "
+sudo apt-get install python3-pip
+echo " ---------------- Installing bpython ------------------ "
+sudo apt-get install bpython
+echo " ---------------- Installing bpython3 ------------------ "
+sudo apt-get install bpython3
+echo " ---------------- Installing ipython ------------------ "
+sudo apt-get install ipython
+echo " ---------------- Installing ipython3 ------------------ "
+sudo apt-get install ipython3
+echo " ---------------- Installing Geany ------------------ "
+sudo apt-get install geany
+echo " ---------------- Installing atom ------------------ "
+#sudo apt-get install atom
+echo " ---------------- Installing GVIM ------------------ "
+sudo apt-get install vim-gnome
+echo " ---------------- Installing RPM ------------------ "
+#sudo apt-get install rpm
+echo " ---------------- Installing JRE ------------------ "
+sudo apt-get install openjdk-8-jre
+echo " ---------------- Installing JDK ------------------ "
+sudo apt-get install openjfk-8-jdk
+echo " ---------------- Installing SMPLAYER ------------------ "
+sudo apt-get install smplayer
+echo " ---------------- Installing SMPLAYER_THEMES ------------------ "
+sudo apt-get install smplayer-themes
+echo " ---------------- Installing SMPLAYER SKINS ------------------ "
+sudo apt-get install smplayer-skins
+echo " ---------------- Installing VLC ------------------ "
+#sudo apt-get install vlc
+echo " ---------------- Installing FIREFOX ------------------ "
+sudo apt-get install firefox
+echo " ---------------- Installing Gnome Terminal ------------------ "
+sudo apt-get install gnome-terminal
+echo " ---------------- Installing PhantomJS ------------------ "
+sudo apt-get install phantomjs
+echo " ---------------- Installing Tabulate ------------------ "
+sudo pip3 install tabulate
+echo " ---------------- Installing BeautifulSoup ------------------ "
+sudo apt-get install python3-bs4
+echo " ---------------- Installing Scrapy ------------------ "
+sudo pip install Scrapy==0.24.4
+echo " ---------------- Installing Git ------------------ "
+sudo apt-get install git
+echo " ---------------- Installing xdotool ------------------ "
+sudo apt-get install xdotool
+echo " ---------------- Installing npm------------------ "
+sudo apt-get install npm
+echo " ---------------- Installing Bleachbit ------------------ "
+sudo apt-get install bleachbit
+echo " ---------------- Installing Python-Dev ------------------ "
+sudo apt-get install python-dev
+echo " ---------------- Installing build essential ------------------ "
+sudo apt-get install build-essential
+echo " ---------------- Installing Youtube-dl ------------------ "
+#sudo wget https://yt-dl.org/downloads/2016.01.23/youtube-dl -O /usr/local/bin/youtube-dl
+#sudo chmod a+rx /usr/local/bin/youtube-dl
+echo " ---------------- Installing geopy ------------------ "
+sudo pip install geopy
+echo " ---------------- Installing lxml ------------------ "
+sudo pip install lxml
+echo " ---------------- Installing requests ------------------ "
+sudo pip install requests
+echo " ---------------- Installing langid ------------------ "
+sudo pip install langid
+echo " ---------------- Installing service_identity selenium scrapylib ------------------ "
+sudo pip install service_identity selenium scrapylib
+echo " ---------------- Installing Scipy ------------------ "
+sudo apt-get install python3-scipy
+echo " ---------------- Installing Numpy ------------------ "
+sudo apt-get install python3-numpy
+echo " ---------------- Installing Scikit-Learn ------------------ "
+#sudo pip3 install -U scikit-learn
+echo " ---------------- Installing matplotlib ------------------ "
+sudo apt-get install python3-matplotlib
+echo " ---------------- Installing Tweepy ------------------ "
+sudo pip3 install tweepy
+echo " ---------------- Installing workrave ------------------ "
+sudo apt-get install workrave
+echo " ---------------- Installing Cron ------------------ "
+sudo apt-get install cron
