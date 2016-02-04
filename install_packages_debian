@@ -1,5 +1,5 @@
 #!/bin/bash
-# Install Packages Script
+# My first script
 
 echo " *************** INSTALLING PACKAGES **********************"
 echo " ----------------------------------------------------------"
@@ -26,23 +26,26 @@ sudo apt-get install ipython3
 echo " ---------------- Installing Geany ------------------ "
 sudo apt-get install geany
 echo " ---------------- Installing atom ------------------ "
+sudo dpkg -i /media/dceshubh/New\ Volume/Softwares/Linux/deb
 #sudo apt-get install atom
 echo " ---------------- Installing GVIM ------------------ "
 sudo apt-get install vim-gnome
 echo " ---------------- Installing RPM ------------------ "
-#sudo apt-get install rpm
+sudo apt-get install rpm
 echo " ---------------- Installing JRE ------------------ "
 sudo apt-get install openjdk-8-jre
 echo " ---------------- Installing JDK ------------------ "
-sudo apt-get install openjfk-8-jdk
+sudo apt-get install openjdk-8-jdk
 echo " ---------------- Installing SMPLAYER ------------------ "
+sudo add-apt-repository ppa:rvm/smplayer
+sudo apt-get update
 sudo apt-get install smplayer
 echo " ---------------- Installing SMPLAYER_THEMES ------------------ "
 sudo apt-get install smplayer-themes
 echo " ---------------- Installing SMPLAYER SKINS ------------------ "
 sudo apt-get install smplayer-skins
 echo " ---------------- Installing VLC ------------------ "
-#sudo apt-get install vlc
+sudo apt-get install vlc
 echo " ---------------- Installing FIREFOX ------------------ "
 sudo apt-get install firefox
 echo " ---------------- Installing Gnome Terminal ------------------ "
@@ -68,8 +71,9 @@ sudo apt-get install python-dev
 echo " ---------------- Installing build essential ------------------ "
 sudo apt-get install build-essential
 echo " ---------------- Installing Youtube-dl ------------------ "
-#sudo wget https://yt-dl.org/downloads/2016.01.23/youtube-dl -O /usr/local/bin/youtube-dl
-#sudo chmod a+rx /usr/local/bin/youtube-dl
+sudo wget https://yt-dl.org/downloads/2016.01.23/youtube-dl -O /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+sudo youtube-dl -U
 echo " ---------------- Installing geopy ------------------ "
 sudo pip install geopy
 echo " ---------------- Installing lxml ------------------ "
@@ -85,7 +89,7 @@ sudo apt-get install python3-scipy
 echo " ---------------- Installing Numpy ------------------ "
 sudo apt-get install python3-numpy
 echo " ---------------- Installing Scikit-Learn ------------------ "
-#sudo pip3 install -U scikit-learn
+sudo pip3 install -U scikit-learn
 echo " ---------------- Installing matplotlib ------------------ "
 sudo apt-get install python3-matplotlib
 echo " ---------------- Installing Tweepy ------------------ "

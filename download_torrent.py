@@ -156,7 +156,6 @@ def download_from_file():
 
     f.close()
 
-
 def update_file():
     fname = "download_torrent"
     f = open(fname, 'r')
@@ -187,28 +186,32 @@ def update_file():
 
 
 if __name__ == '__main__':
-    query = True
-    print(" ------ Enter 1 to search for a particular show ----- ")
-    print(" ------ Enter 2 to continue downloading from download_torrent file ------ ")
-    print(" ------ Enter 3 to update the download_torrent file ----- ")
-    print(" ------ Enter any value greater than 3 to quit ------ ")
-    choice = input(" ----- Enter your choice ----- ")
-    choice = int(choice)
-    if choice is 1:
-        try:
-            aksearch(query, None)
-        except KeyboardInterrupt:
-            print(" ----- User Interruption ----- ")
-    elif choice is 2:
-        try:
-            download_from_file()
-        except KeyboardInterrupt:
-            print(" ----- User Interruption ----- ")
-    elif choice is 3:
-        try:
-            update_file()
-        except KeyboardInterrupt:
-            print(" ----- User Interruption ----- ")
+    if sys.argv[1] is None:
+        query = True
+        print(" ------ Enter 1 to search for a particular show ----- ")
+        print(" ------ Enter 2 to continue downloading from download_torrent file ------ ")
+        print(" ------ Enter 3 to update the download_torrent file ----- ")
+        print(" ------ Enter any value greater than 3 to quit ------ ")
+        choice = input(" ----- Enter your choice ----- ")
+        choice = int(choice)
+        if choice is 1:
+            try:
+                aksearch(query, None)
+            except KeyboardInterrupt:
+                print(" ----- User Interruption ----- ")
+        elif choice is 2:
+            try:
+                download_from_file()
+            except KeyboardInterrupt:
+                print(" ----- User Interruption ----- ")
+        elif choice is 3:
+            try:
+                update_file()
+            except KeyboardInterrupt:
+                print(" ----- User Interruption ----- ")
+        else:
+            print(" ------ Quitting ------- ")
+            sys.exit(0)
+
     else:
-        print(" ------ Quitting ------- ")
-        sys.exit(0)
+        print(" -------------------------- Script Not Executed ----------------------- ")
