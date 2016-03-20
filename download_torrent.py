@@ -186,13 +186,15 @@ def update_file():
 
 
 if __name__ == '__main__':
-    if sys.argv[1] is None:
-        query = True
+    choice = sys.argv[1]
+    query = True
+    if choice is None or choice is 'y' or choice is 'Y':
         print(" ------ Enter 1 to search for a particular show ----- ")
         print(" ------ Enter 2 to continue downloading from download_torrent file ------ ")
         print(" ------ Enter 3 to update the download_torrent file ----- ")
         print(" ------ Enter any value greater than 3 to quit ------ ")
         choice = input(" ----- Enter your choice ----- ")
+    else:
         choice = int(choice)
         if choice is 1:
             try:
@@ -212,6 +214,3 @@ if __name__ == '__main__':
         else:
             print(" ------ Quitting ------- ")
             sys.exit(0)
-
-    else:
-        print(" -------------------------- Script Not Executed ----------------------- ")
